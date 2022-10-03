@@ -54,7 +54,9 @@ export default class IDM {
     }
 
     async setBatteryLevel(value: number) {
-        return await this.writeFloatRegister(86, value);
+        const buf = Buffer.allocUnsafe(2)
+        buf.writeIntBE(value, 0, 2)
+        return await this.client.writeRegisters(86, buf)
     }
 
 };
