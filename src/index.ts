@@ -1,4 +1,3 @@
-import uuid from './helpers/uuid';
 import ModbusRTU from 'modbus-serial';
 
 export default class IDM {
