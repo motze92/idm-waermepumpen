@@ -1,6 +1,6 @@
 {
   "name": "idm-waermepumpen",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Node Module to send PV values to \"IDM Waermepumpen\" heatpump",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

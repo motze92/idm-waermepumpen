@@ -33,6 +33,10 @@ export default class IDM {
         return res;
     }
 
+    async requestHeating() {
+        return await this.client.writeCoil(1710, true);
+    }
+
     async setPvSurplus(value: number) {
         return await this.writeFloatRegister(74, value);
     }
